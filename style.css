@@ -7,15 +7,23 @@
 
 }
 
+/* .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+} */
 
 body {
 
     /* Decodificador - 2 Desktop */
 
+    /* Decodificador - 1 Desktop */
+
 
     position: relative;
     width: 1440px;
-    height: 1050;
+    height: 1024px;
 
     /* Light blue/light-blue-100 */
 
@@ -56,19 +64,15 @@ header {
     display: inline-block;
     text-align: center;
     flex-direction: row;
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 808px;
-    max-height: 520;
-    width: 940px;
-    background-color: #0A3871;
-    margin: 0 1.5%;
-    padding: 30px;
+
+
+
+   
 
 
     /* Light blue/light-blue-100 */
 
-    background: #F3F5FC;
+
 }
 
 textarea::placeholder {
@@ -388,4 +392,24 @@ textarea::placeholder {
         width: 100%;
         padding: 0;
     }
+}
+
+
+@media (max-width: 1920px) {
+    .container {
+        width: 1230px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
