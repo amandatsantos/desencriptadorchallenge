@@ -12,55 +12,55 @@
 </head>
 
 <body>
-    <div class="conteiner">
+    <header>
         <div class="caixa">
 
 
             <h1 class="logo-alura"><img src="imagens/a.png"></h1>
 
         </div>
-        </header>
-        <main class="main">
+    </header>
+    <main class="main">
 
-            <section>
-                <textarea class="input-texto" cols="40" rows="6" placeholder="Digite o texto :"></textarea>
-                <div>
-                    <h6 class="informacao"><img src="imagens/icon-info.png">Apenas letras maiusculas ou minusculas </h6>
+        <section>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite o texto :"></textarea>
+            <div>
+                <h6 class="informacao"><img src="imagens/icon-info.png">Apenas letras maiusculas ou minusculas </h6>
+            </div>
+            <div class="botoes">
+                <div class="caixa-botoes">
+                    <button class="encriptar" onclick="bntEncriptar()">
+                        Criptografar
+                    </button>
+                    <button class="desencriptar" onclick="bntDesencriptar()">
+                        Descriptografar
+                    </button>
                 </div>
-                <div class="botoes">
-                    <div class="caixa-botoes">
-                        <button class="encriptar" onclick="bntEncriptar()">
-                            Criptografar
-                        </button>
-                        <button class="desencriptar" onclick="bntDesencriptar()">
-                            Descriptografar
-                        </button>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <textarea class="mensagem" value="" cols="18" rows="6"> </textarea>
-                <div class="botoes">
-                    <div class="caixa-botoes-mensagem">
-                        <button class="copiar" id="copiarMsg" onclick="copiar()">
-                            Copiar
-                        </button>
-                        <!-- <button class="limpar" id="limparTela" onclick="limpar()">
+        <section>
+            <input class="mensagem" > 
+            <div class="botoes">
+                <div class="caixa-botoes-mensagem">
+                    <button class="copiar" id="copiarMsg" onclick="copiar()">
+                        Copiar
+                    </button>
+                    <!-- <button class="limpar" id="limparTela" onclick="limpar()">
                         Limpar
                     </button> -->
-                    </div>
                 </div>
-            </section>
-
-        </main>
-        <footer>
-            <div class="caixa-rodape">
-                <p class="copyright"> <a href="https://github.com/amandatsantos"> &copy;copyrigt amanda 2022</a></p>
             </div>
-        </footer>
-        <script src="script.js"> </script>
-    </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="caixa-rodape">
+            
+        </div>
+    </footer>
+    <script src="script.js"> </script>
+
 </body>
 
 </html>

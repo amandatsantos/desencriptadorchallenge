@@ -7,23 +7,16 @@
 
 }
 
-/* .container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1230px;
-} */
+
 
 body {
 
-    /* Decodificador - 2 Desktop */
-
-    /* Decodificador - 1 Desktop */
 
 
-    position: relative;
-    width: 1440px;
-    height: 1024px;
+
+    position: fixed;
+    width: 1349px;
+    height: 687px;
 
     /* Light blue/light-blue-100 */
 
@@ -32,27 +25,26 @@ body {
 }
 
 .logo-alura {
+
     position: absolute;
     left: 84px;
     top: 40px;
 
 
 
+
 }
 
-.caixa {
 
-
-    position: absolute;
-    width: 1024px;
-    margin: 0 auto;
-}
 
 header {
 
     top: 110px;
 
     padding: 10px 10px 20px 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
 
 }
 
@@ -60,17 +52,11 @@ header {
 
 .main {
 
-
+position: relative;
     display: inline-block;
     text-align: center;
     flex-direction: row;
 
-
-
-   
-
-
-    /* Light blue/light-blue-100 */
 
 
 }
@@ -88,35 +74,39 @@ textarea::placeholder {
     border: 0 none;
     outline: 0;
     position: absolute;
-    width: 480px;
-    height: 48px;
+    width: 680px;
+    height: 68px;
     right: 640px;
-    left: 397px;
+    left: 240px;
     top: 168px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 150%;
     /* identical to box height, or 48px */
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 
 
 }
 
 .mensagem {
     position: absolute;
-    width: 400px;
-    height: 900px;
-    left: 1320px;
+    width: 240px;
+    height: 580px;
+    left: 980px;
     right: 40px;
     top: 40px;
     bottom: 40px;
-    text-align: center;
-    line-height: 100px;
+    text-align: justify;
+    line-height: 80px;
     /* Rectangle 1 */
-    padding-right: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
 
 
 
@@ -129,12 +119,16 @@ textarea::placeholder {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     display: inline-block;
+    background-color: #F3F5FC;
     background:
         url("imagens/info-mensagem.png")center,
         url("imagens/boneco.png"), center;
+    background-size: contain;
+
 
 
     background-repeat: no-repeat;
+
 
 
 
@@ -157,8 +151,8 @@ textarea::placeholder {
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 397px;
-    top: 885px;
+    left: 200px;
+    top: 570px;
 
 }
 
@@ -177,29 +171,13 @@ textarea::placeholder {
     gap: 24px;
 
     position: absolute;
-    width: 680px;
+    width: 640px;
     height: 100px;
-    left: 1222px;
-    top: 805px;
+    left: 780px;
+    top: 550px;
 
 }
 
-.botoes {
-    box-sizing: border-box;
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 54px;
-    gap: 10px;
-    width: 240px;
-    height: 72px;
-
-
-
-}
 
 .botoes-mensagem {
     box-sizing: border-box;
@@ -223,7 +201,6 @@ textarea::placeholder {
 
 .copiar {
     margin-left: 30px;
-    color: #000000;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400px;
@@ -231,8 +208,9 @@ textarea::placeholder {
     line-height: 39px;
     text-align: center;
     width: 200px;
-    height: 67px;
-    /* Dark blue/dark-blue-300 */
+    height: 50px;
+
+    /* Light gray */
 
     background: #D8DFE8;
     /* Dark blue/dark-blue-300 */
@@ -240,10 +218,11 @@ textarea::placeholder {
     border: 1px solid #0A3871;
     border-radius: 24px;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    /* Inside auto layout */
 
+    flex: none;
+    order: 1;
+    flex-grow: 0
 }
 
 /* 
@@ -275,8 +254,8 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 39px;
     text-align: center;
-    width: 328px;
-    height: 67px;
+    width: 200px;
+    height: 50px;
 
     /* Light gray */
 
@@ -303,8 +282,8 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 39px;
     text-align: center;
-    width: 328px;
-    height: 67px;
+    width: 200px;
+    height: 50px;
     /* Dark blue/dark-blue-300 */
 
     background: #0A3871;
@@ -322,9 +301,6 @@ textarea::placeholder {
 .informacao {
 
     /* Apenas letras minúsculas e sem acento. */
-
-
-
 
     font-family: 'Inter';
     font-style: normal;
@@ -360,56 +336,9 @@ textarea::placeholder {
     width: 252px;
     height: 18px;
 
-    left: 397px;
-    top: 851px;
-
-}
-
-.caixa-rodape {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #7fafe9;
-}
-
-
-.copyright a:link {
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    position: center;
-
+    left: 200px;
+    top: 550px;
 
 }
 
 
-@media screnn and (max-width: 768px) {
-    section {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-
-@media (max-width: 1920px) {
-    .container {
-        width: 1230px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        width: 960px;
-        max-width: 100%;
-    }
-}
-
-.container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
