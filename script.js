@@ -1,6 +1,7 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
 
+
 function bntEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensagem.value = textoEncriptado
@@ -50,3 +51,16 @@ function copiar() {
 
 
 }
+
+/* function copiar() {
+    let copiarMensagem = document.querySelector(".mensagem");
+    copiarMensagem.select();
+    copiarMensagem.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copiarMensagem.value);
+
+    alert("copiado");
+
+
+} */
+

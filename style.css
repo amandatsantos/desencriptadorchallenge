@@ -15,7 +15,7 @@ body {
 
     position: relative;
     width: 1440px;
-    height: 900px;
+    height: 1050;
 
     /* Light blue/light-blue-100 */
 
@@ -219,7 +219,7 @@ textarea::placeholder {
 
 .copiar {
     margin-left: 30px;
-    color: #F3F5FC;
+    color: #000000;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400px;
@@ -230,11 +230,11 @@ textarea::placeholder {
     height: 67px;
     /* Dark blue/dark-blue-300 */
 
-    background: #0A3871;
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
     border-radius: 24px;
-    border: 1px solid #000000;
-    border-radius: 24px;
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -242,6 +242,7 @@ textarea::placeholder {
 
 }
 
+/* 
 .limpar {
     margin-left: 30px;
     font-family: 'Inter';
@@ -254,13 +255,13 @@ textarea::placeholder {
     height: 67px;
     /* Light gray */
 
-    background: #D8DFE8;
+/*background: #D8DFE8;
     /* Dark blue/dark-blue-300 */
 
-    border: 1px solid #0A3871;
+/*border: 1px solid #0A3871;
     border-radius: 24px;
 
-}
+} */
 
 .desencriptar {
     margin-left: 30px;
@@ -379,4 +380,12 @@ textarea::placeholder {
     position: center;
 
 
+}
+
+
+@media screnn and (max-width: 768px) {
+    section {
+        width: 100%;
+        padding: 0;
+    }
 }
