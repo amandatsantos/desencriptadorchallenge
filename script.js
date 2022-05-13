@@ -12,6 +12,8 @@ function bntDesencriptar() {
     mensagem.style.background = "none"
 }
 
+
+
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]]
     stringEncriptada = stringEncriptada.toLowerCase();
@@ -35,4 +37,16 @@ function desencriptar(stringDesencriptada) {
 
     }
     return stringDesencriptada;
+}
+
+function copiar() {
+    let copiarMensagem = document.querySelector(".mensagem");
+    copiarMensagem.select();
+    copiarMensagem.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copiarMensagem.value);
+
+    alert("copiado");
+
+
 }
